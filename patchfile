@@ -1,0 +1,14 @@
+diff --git a/Greeter.java b/Greeter.java
+index 8afc84b..310dfa9 100644
+--- a/Greeter.java
++++ b/Greeter.java
+@@ -17,6 +17,9 @@ public class Greeter {
+   }
+ 
+   public static void main(String[] args) {
++    if (args.length < 3) {
++      System.exit(1);
++    }
+     String language = args[0];
+     String country = args[1];
+     String name = args[2];
